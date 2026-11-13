@@ -26,17 +26,23 @@ Sin token, los endpoints del CRUD responden **401**.
 
 ### Enlaces de la API en el VPS
 
-Desde el navegador responden **401**, porque requieren token. Para probarlos, usa la colección de Bruno incluida en el repositorio.
+**Endpoint público** (se puede abrir en el navegador):
 
 | Acción | Método | Enlace |
 |---|---|---|
-| Registro | POST | [http://179.197.82.130:8087/api/auth/register](http://179.197.82.130:8087/api/auth/register) |
-| Login | POST | [http://179.197.82.130:8087/api/auth/login](http://179.197.82.130:8087/api/auth/login) |
-| Listar | GET | [http://179.197.82.130:8087/api/v1/students?page=0&size=5](http://179.197.82.130:8087/api/v1/students?page=0&size=5) |
-| Ver uno | GET | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
-| Crear | POST | [http://179.197.82.130:8087/api/v1/students](http://179.197.82.130:8087/api/v1/students) |
-| Actualizar | PUT | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
-| Eliminar | DELETE | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
+| Información de la API | GET | [http://179.197.82.130:8087/api/info](http://179.197.82.130:8087/api/info) |
+
+**Endpoints que se prueban con Bruno.** Desde el navegador no funcionan: los del CRUD responden **401** porque requieren token, y los de POST, PUT y DELETE no se pueden enviar desde un enlace. Usa la colección de Bruno incluida en el repositorio.
+
+| Acción | Método | Enlace | Token |
+|---|---|---|---|
+| Registro | POST | [http://179.197.82.130:8087/api/auth/register](http://179.197.82.130:8087/api/auth/register) | No |
+| Login | POST | [http://179.197.82.130:8087/api/auth/login](http://179.197.82.130:8087/api/auth/login) | No |
+| Listar | GET | [http://179.197.82.130:8087/api/v1/students?page=0&size=5](http://179.197.82.130:8087/api/v1/students?page=0&size=5) | Sí |
+| Ver uno | GET | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) | Sí |
+| Crear | POST | [http://179.197.82.130:8087/api/v1/students](http://179.197.82.130:8087/api/v1/students) | Sí |
+| Actualizar | PUT | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) | Sí |
+| Eliminar | DELETE | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) | Sí |
 
 ## Estructura
 
