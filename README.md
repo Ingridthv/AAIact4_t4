@@ -24,17 +24,19 @@ API REST de estudiantes conectada a MySQL. Usa Spring Security y JWT: solo se pu
 
 Sin token, los endpoints del CRUD responden **401**.
 
-### URLs completas en el VPS
+### Enlaces de la API en el VPS
 
-Se prueban con la colección de Bruno; desde el navegador responden 401 porque requieren token.
+Desde el navegador responden **401**, porque requieren token. Para probarlos, usa la colección de Bruno incluida en el repositorio.
 
-- Registro: `POST http://179.197.82.130:8087/api/auth/register`
-- Login: `POST http://179.197.82.130:8087/api/auth/login`
-- Listar: `GET http://179.197.82.130:8087/api/v1/students?page=0&size=5`
-- Ver uno: `GET http://179.197.82.130:8087/api/v1/students/{id}`
-- Crear: `POST http://179.197.82.130:8087/api/v1/students`
-- Actualizar: `PUT http://179.197.82.130:8087/api/v1/students/{id}`
-- Eliminar: `DELETE http://179.197.82.130:8087/api/v1/students/{id}`
+| Acción | Método | Enlace |
+|---|---|---|
+| Registro | POST | [http://179.197.82.130:8087/api/auth/register](http://179.197.82.130:8087/api/auth/register) |
+| Login | POST | [http://179.197.82.130:8087/api/auth/login](http://179.197.82.130:8087/api/auth/login) |
+| Listar | GET | [http://179.197.82.130:8087/api/v1/students?page=0&size=5](http://179.197.82.130:8087/api/v1/students?page=0&size=5) |
+| Ver uno | GET | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
+| Crear | POST | [http://179.197.82.130:8087/api/v1/students](http://179.197.82.130:8087/api/v1/students) |
+| Actualizar | PUT | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
+| Eliminar | DELETE | [http://179.197.82.130:8087/api/v1/students/1](http://179.197.82.130:8087/api/v1/students/1) |
 
 ## Estructura
 
