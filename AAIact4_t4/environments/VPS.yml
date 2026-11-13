@@ -1,0 +1,6 @@
+name: VPS
+variables:
+  - name: baseUrl
+    value: http://179.197.82.130:8087
+  - name: token
+    value: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTQ1MzgzNDEsInN1YiI6ImluZ3JpZEBlamVtcGxvLmNvbSIsImlhdCI6MTc5NDUzNDc0MX0.rQajONgjBpLGlKqf4GNQJtizvyn4V9A9jvB62nyyFcE

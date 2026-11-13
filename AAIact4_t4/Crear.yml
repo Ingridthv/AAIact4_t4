@@ -1,0 +1,26 @@
+info:
+  name: Crear
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/students"
+  body:
+    type: json
+    data: |-
+      {
+          "firstName": "Ana",
+          "lastName": "Lopez",
+          "email": "ana@ejemplo.com"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

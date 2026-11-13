@@ -1,0 +1,6 @@
+name: Local
+variables:
+  - name: baseUrl
+    value: http://localhost:8080
+  - name: token
+    value: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTQ1MzY0MDcsInN1YiI6ImluZ3JpZEBlamVtcGxvLmNvbSIsImlhdCI6MTc5NDUzMjgwN30.xJWKKm-_CZbHFZuOdv242ENI9NR14TlPVbyI05MmdMI
